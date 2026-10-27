@@ -1,0 +1,12 @@
+{
+  "name": "nevvie-plugins",
+  "description": "Nevvie's Claude plugins for small businesses that run on talking, not tech.",
+  "owner": { "name": "Nevvie (Meltem Oktay)", "email": "nevvieconsulting@gmail.com" },
+  "plugins": [
+    {
+      "name": "nevvie-events",
+      "source": "./plugins/nevvie-events",
+      "description": "Plan, list and sell your events on Hipsy by talking to Claude."
+    }
+  ]
+}

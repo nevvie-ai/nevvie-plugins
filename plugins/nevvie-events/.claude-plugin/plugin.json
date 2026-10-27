@@ -1,0 +1,20 @@
+{
+  "name": "nevvie-events",
+  "displayName": "Event Assistant for Hipsy organisers",
+  "description": "Plan, list and sell your events on Hipsy by talking to Claude: listings, tickets, posters, posts and participant emails, in your own voice.",
+  "author": {
+    "name": "Nevvie",
+    "email": "nevvieconsulting@gmail.com"
+  },
+  "keywords": [
+    "hipsy",
+    "events",
+    "tickets",
+    "workshops",
+    "retreats",
+    "ceremonies",
+    "ecstatic dance",
+    "tantra",
+    "event organiser"
+  ]
+}
