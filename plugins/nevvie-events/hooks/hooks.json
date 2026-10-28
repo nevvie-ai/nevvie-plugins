@@ -5,7 +5,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "git pull --ff-only -q 2>/dev/null || echo 'Nevvie: could not fetch the latest version of this business folder. Mention it to the owner in one sentence before changing anything.'"
+            "command": "if [ -d .git ]; then git pull --ff-only -q 2>/dev/null || echo 'Nevvie: could not fetch the latest version of this business folder. Mention it to the owner in one sentence before changing anything.'; fi"
           }
         ]
       }

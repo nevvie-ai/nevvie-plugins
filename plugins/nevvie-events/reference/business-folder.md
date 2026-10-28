@@ -1,6 +1,8 @@
 # The business folder (contract)
 
-Every skill in this plugin reads and writes the owner's business folder in this shape. It is the
+Every skill in this plugin reads and writes the owner's business folder in this shape. The
+folder is plain text files, either in their Google Drive (synced to the computer with Google
+Drive for desktop, kept available offline; the default) or in a git repository. It is the
 contract between the plugin (same for everyone) and the business (theirs alone). Paths are
 relative to the folder root.
 
