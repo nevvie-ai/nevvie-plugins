@@ -14,10 +14,13 @@ browser tips: `${CLAUDE_PLUGIN_ROOT}/reference/hipsy.md`. Field by field, with e
 1. The event file has status `approved` and a complete listing, tickets, welcome text and image.
 2. **Policy check (gate), right before writing anything to Hipsy:** check the title, the public
    text, the cover image and the themes against the policy checklist in
-   `${CLAUDE_PLUGIN_ROOT}/reference/hipsy.md`, point by point. Report it to the owner in one short
-   message: "passes" or each flag with a proposed fix. **Nothing goes on Hipsy while a flag is
-   open**; the owner decides each fix (move to the welcome text, soften, or leave out). Note the
-   result and date in the event file.
+   `${CLAUDE_PLUGIN_ROOT}/reference/hipsy.md`, point by point. The verdict has exactly two forms:
+   - **"Ready for Hipsy"**: only when all seven points pass *and* the cover image exists and passed.
+   - **"Not yet: <n> open points"**: anything else (a borderline line, a missing image, an
+     unreviewed move to the welcome text). List each point with its proposed fix in one short
+     message, then ask about **the first one only**.
+   Nothing goes on Hipsy while the verdict is "Not yet". Note the verdict and date in the event
+   file.
 3. **Browser:** use the one already signed in to Hipsy (try Claude in Chrome first, then the
    built-in browser). Only if neither is, ask the owner to sign in; never type their password.
    Chat alone can't do this step: then give them the listing ready to paste, field by field.
