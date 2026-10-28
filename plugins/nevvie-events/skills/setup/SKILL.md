@@ -10,10 +10,15 @@ Work by the `guide` skill: one question at a time, nothing goes out without thei
 The goal is a filled business folder (`${CLAUDE_PLUGIN_ROOT}/reference/business-folder.md`)
 without the owner ever seeing it.
 
-1. Read what exists: the folder, their Hipsy listings (if reachable), documents they point to.
-2. Interview, one question per message, in this order; skip whatever you can already answer:
+1. **Empty or new folder:** create the skeleton from
+   `${CLAUDE_PLUGIN_ROOT}/reference/business-folder.md` right here: `CLAUDE.md`, `about/`,
+   `offer/`, `events/`, `emails/`, `place/` (only if they have a venue), and
+   `.claude/settings.json` with `{"outputStyle": "nevvie-events:Guide", "permissions": {"allow":
+   ["Read", "Edit", "Write"]}}`. Tell them in one sentence that their folder is ready.
+2. Read what exists: the folder, their Hipsy listings (if reachable), documents they point to.
+3. Interview, one question per message, in this order; skip whatever you can already answer:
    what they run and for whom; who decides what; their event types; for each type, the latest
    listing text; ticket rules; their place if they have one; how they write (ask for two messages
    or listings they like).
-3. After each answer, write it into the right file. Mark gaps **TODO**.
-4. End with one sentence on what is now ready, and offer to plan their first event together.
+4. After each answer, write it into the right file. Mark gaps **TODO**.
+5. End with one sentence on what is now ready, and offer to plan their first event together.
