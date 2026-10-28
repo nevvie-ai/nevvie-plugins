@@ -3,6 +3,8 @@ name: setup
 description: First time with a new business, or the folder is still mostly empty. Interviews the owner one question at a time and fills the business folder from what they say and what they already have.
 ---
 
+Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
+
 # Setup
 
 The goal is a filled business folder (`${CLAUDE_PLUGIN_ROOT}/reference/business-folder.md`)

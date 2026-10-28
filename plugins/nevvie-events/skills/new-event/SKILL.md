@@ -3,6 +3,8 @@ name: new-event
 description: The owner wants to plan or prepare an event ("Frisky Friday on 14 November", "a retreat in spring", "zet de academy van maart klaar"). Turns a recipe and a date into a complete event, ready for their yes: listing text, tickets, poster, promotion posts and participant emails.
 ---
 
+Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
+
 # New event
 
 Read `${CLAUDE_PLUGIN_ROOT}/reference/business-folder.md` for where things live and the file

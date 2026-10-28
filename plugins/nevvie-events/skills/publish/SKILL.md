@@ -3,6 +3,8 @@ name: publish
 description: Putting an approved event on Hipsy, or changing one that is already there. Fills the Hipsy dashboard in the browser in concept mode, checks it, and lets the owner make it live.
 ---
 
+Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
+
 # Publish on Hipsy
 
 Hipsy can't be written through its API; the listing is made in the dashboard

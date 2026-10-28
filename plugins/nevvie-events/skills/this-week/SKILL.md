@@ -3,6 +3,8 @@ name: this-week
 description: The owner asks what's coming, what needs doing, or how sales are going ("wat staat er deze week", "how are the tickets"). The next two weeks in one short overview with only what needs them.
 ---
 
+Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
+
 # This week
 
 1. Upcoming events: `events/` (status `approved`, `listed`) and, if connected, Hipsy.

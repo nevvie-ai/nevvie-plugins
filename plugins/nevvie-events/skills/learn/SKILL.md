@@ -3,6 +3,8 @@ name: learn
 description: After an event, or when the owner corrects a draft or says something should go differently next time. Puts the lesson where it will be used, so it never needs saying twice.
 ---
 
+Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
+
 # Learn
 
 1. After an event: ask one question, what to keep and what to change. Add sales totals if known.

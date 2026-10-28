@@ -3,6 +3,8 @@ name: follow-up
 description: Emails to participants of an event: welcome after booking, reminder before, thank-you after, or an extra message ("stuur iedereen van zaterdag dat de sauna aan staat").
 ---
 
+Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
+
 # Follow-up emails
 
 1. Template from `emails/` (welcome, reminder, thank-you), filled per person with first name, event,
