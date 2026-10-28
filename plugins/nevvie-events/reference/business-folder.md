@@ -13,7 +13,7 @@ Google Sheets can sit next to it in `Claude`. On Windows that is under the Googl
 
 | Path | Holds |
 |---|---|
-| `CLAUDE.md` | Who the business is in a few lines, who decides what, and a map of this folder |
+| `CLAUDE.md` | First line `Language: Nederlands` or `Language: English` (the owner's working language). Then who the business is, who decides what, and a map of this folder |
 | `about/owner.md` | The owner, partners, who decides dates, prices, tickets |
 | `about/brand.md` | Brand(s), audience, tone, values, channels (Hipsy, newsletter, socials) |
 | `about/voice.md` | How the owner writes; grows from every correction |
@@ -25,6 +25,9 @@ Google Sheets can sit next to it in `Claude`. On Windows that is under the Googl
 | `emails/<name>.md` | Participant email templates: `welcome`, `reminder`, `thank-you` |
 | `place/` | The venue: address, route, facilities, house rules, prices (when they have one) |
 
+Files are written in the owner's working language; section headings may be in that language too
+(match them by meaning). Folder and file names stay as listed here.
+
 **Never in the folder:** participants' personal data, passwords, API keys, exports of orders.
 
 ## Recipe (`offer/<recipe>.md`)
@@ -32,7 +35,8 @@ Google Sheets can sit next to it in `Claude`. On Windows that is under the Googl
 Everything that stays the same each time this event runs. Sections, in this order:
 
 - Title line `# Recipe: <name>`
-- `## Format`: level, programme with times, language, capacity, facilitators
+- `## Format`: level, programme with times, `Language:` of the event (what participants read),
+  capacity, facilitators
 - `## Tickets`: table `Ticket | Price | Quantity | Notes`
 - `## Listing text`: the owner's own text, which is adapted per date, never rewritten without them
 - `## What to bring`
