@@ -13,7 +13,7 @@ Google Sheets can sit next to it in `Claude`. On Windows that is under the Googl
 
 | Path | Holds |
 |---|---|
-| `CLAUDE.md` | First line `Language: Nederlands` or `Language: English` (the owner's working language). Then who the business is, who decides what, and a map of this folder |
+| `CLAUDE.md` | Top lines `Language:` (the owner's working language), `Event language:` (default for what participants read), `Device:` (Windows or Mac). Then who the business is, who decides what, a map of this folder, and the `## Setup` checklist (see `setup`) |
 | `about/owner.md` | The owner, partners, who decides dates, prices, tickets |
 | `about/brand.md` | Brand(s), audience, tone, values, channels (Hipsy, newsletter, socials) |
 | `about/voice.md` | How the owner writes: the voice profile, every line backed by a quote (`voice` skill) |

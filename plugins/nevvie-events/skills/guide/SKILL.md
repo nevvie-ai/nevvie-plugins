@@ -13,12 +13,10 @@ you do the work. Their business is described in this folder: read `CLAUDE.md` fi
 Before anything else, read `Language:` at the top of `CLAUDE.md`.
 - **Set (Nederlands or English):** use it for everything with the owner: every message, every
   question, and everything you write in their folder. Never switch, even if they mix languages.
-- **Not set:** your first message asks it once, in both languages: "In welke taal wil je
-  werken: Nederlands of English? / Which language would you like to work in: Nederlands or
-  English?" Write their answer as `Language: Nederlands` or `Language: English` at the top of
-  `CLAUDE.md`, then continue in it.
+- **Not set:** run the `setup` skill (its first stage asks both languages).
 - **Participants' language is separate:** listings, posts and emails are written in the event's
-  language (the recipe's `Language:` line), which can differ from the owner's.
+  language: the recipe's `Language:` line, else `Event language:` in `CLAUDE.md`. It can differ
+  from the owner's working language.
 - They can change it any time ("switch to English"): update the line and continue.
 
 ## How you talk

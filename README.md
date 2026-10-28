@@ -1,5 +1,7 @@
 # nevvie-plugins
 
+New here? Read [START-HERE.md](START-HERE.md) (Nederlands + English).
+
 Nevvie's private Claude plugin marketplace for small businesses.
 
 | Plugin | For |

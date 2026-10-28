@@ -1,32 +1,92 @@
 ---
 name: setup
-description: First time with a new business, or the folder is still mostly empty. Interviews the owner one question at a time and fills the business folder from what they say and what they already have.
+description: First time with a business, the folder is new or mostly empty, the owner says "set me up" / "help me start", or CLAUDE.md shows an unfinished Setup list. Takes them from zero to a working business folder, one step at a time, adapted to their computer, so they never need outside help.
 ---
 
 Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
 
 # Setup
 
-The goal is a filled business folder (`${CLAUDE_PLUGIN_ROOT}/reference/business-folder.md`)
-without the owner ever seeing it.
+Goal: a working business folder (`${CLAUDE_PLUGIN_ROOT}/reference/business-folder.md`) and
+everything around it, without the owner getting stuck. Instructions per computer:
+`${CLAUDE_PLUGIN_ROOT}/reference/devices.md`.
 
-0. **Language first:** if `CLAUDE.md` has no `Language:` line, ask it as the `guide` skill says,
-   before anything else.
-1. **Empty or new folder:** create the skeleton from
-   `${CLAUDE_PLUGIN_ROOT}/reference/business-folder.md` right here: `CLAUDE.md`, `about/`,
-   `offer/`, `events/`, `emails/`, `place/` (only if they have a venue), and
-   `.claude/settings.json` with `{"outputStyle": "nevvie-events:Guide", "permissions": {"allow":
-   ["Read", "Edit", "Write"]}}`. Write everything in their language. Tell them in one sentence that their folder is ready.
-2. Read what exists: the folder and documents they point to. If they already sell on Hipsy, run
-   `hipsy-scan` (read only) to learn their events and usual choices. If they don't, ask the
-   *default* fields of `${CLAUDE_PLUGIN_ROOT}/reference/hipsy-template.md` one at a time when the
-   first event needs them, and write `offer/hipsy-defaults.md`.
-   Build their voice with the `voice` skill (samples first, then the profile).
-   Offer once to connect Canva (the "Canva" connector on their Claude account: search designs,
-   autofill, export), so posters for new dates are made for them.
-3. Interview, one question per message, in this order; skip whatever you can already answer:
-   what they run and for whom; who decides what; their event types; for each type, the latest
-   listing text; ticket rules; their place if they have one; how they write (ask for two messages
-   or listings they like).
-4. After each answer, write it into the right file. Mark gaps **TODO**.
-5. End with one sentence on what is now ready, and offer to plan their first event together.
+**Progress is saved.** `CLAUDE.md` has a `## Setup` checklist (below). Tick each stage when it
+works and continue from the first open one in any later session. Never redo a ticked stage
+unless they ask. An existing folder without the list (set up before this version): add the list,
+tick every stage the folder already covers, and continue with the first open one.
+
+## Stage 0: check where you are (silently)
+
+Detect system, folder, cloud vs local, browser and connectors as `devices.md` says.
+- **Cloud session:** tell them, in one short message in Dutch and English, that this has to run
+  on their own computer, with the steps to start a local session. Stop.
+- **No business folder yet** (no `CLAUDE.md`, and not inside Google Drive): continue with Stage 1,
+  then Stage 2 moves them into Drive.
+
+## Stage 1: languages
+
+1. **Working language** (how you talk with them and write their folder), asked in both
+   languages: "In welke taal wil je werken: Nederlands of English? / Which language would you like
+   to work in?" → `Language: <answer>`.
+2. **Event language** (what their participants read; recipes can override per event): "In welke
+   taal schrijf je meestal voor je deelnemers?" → `Event language: <answer>`.
+
+## Stage 2: their folder in Google Drive
+
+If the session isn't already inside Google Drive: teach Google Drive for desktop for **their
+system** (devices.md), one step per message, waiting for "done" each time; then: make the folder
+**My Drive → Claude → <business name>**, make it available offline, and start a new local session
+on it. Stop this session there; the next one continues here.
+
+When inside the folder: create the skeleton (`CLAUDE.md` with the top lines and the Setup list,
+`about/`, `offer/`, `events/`, `emails/`, `place/` only if they have a venue,
+`.claude/settings.json` with `{"outputStyle": "nevvie-events:Guide", "permissions": {"allow":
+["Read", "Edit", "Write"]}}`). Write the two language lines and `Device: <Windows|Mac>` at the
+top of `CLAUDE.md`.
+
+## Stage 3: the business
+
+Interview, one question per message, skipping what you can already read: what they run and for
+whom; who decides what (dates, prices, tickets); their event types; for each type the latest
+listing text; ticket rules; their venue if they have one. Write each answer into the right file;
+gaps are **TODO**.
+
+## Stage 4: Hipsy
+
+- **Do they sell on Hipsy?** No account yet: creating it is theirs (hipsy.nl, sign up as
+  organiser); guide them, never fill it in.
+- **Browser:** check Claude in Chrome or the built-in browser and whether it's signed in to Hipsy
+  (devices.md); teach what's missing for their system.
+- Has events: run `hipsy-scan` (read only). No events yet: ask the *default* fields of
+  `${CLAUDE_PLUGIN_ROOT}/reference/hipsy-template.md` when the first event needs them and write
+  `offer/hipsy-defaults.md`.
+
+## Stage 5: their voice
+
+Run the `voice` skill's Build step: their own texts first (Hipsy listings, website, two or three
+messages they like), then the profile.
+
+## Stage 6: connections
+
+Offer, one at a time, with the steps from devices.md: **Canva** (posters for new dates),
+**Gmail** (email drafts). Skipping is fine; note it.
+
+## Stage 7: first event
+
+Offer to plan their first event together (`new-event`). Setup is done when it is `approved`.
+
+## The Setup list in `CLAUDE.md`
+
+```
+## Setup
+- [ ] Languages
+- [ ] Folder in Google Drive (available offline)
+- [ ] Business basics
+- [ ] Hipsy (account, browser signed in, defaults)
+- [ ] Voice
+- [ ] Connections (Canva, Gmail)
+- [ ] First event
+```
+
+When something fails at any stage, run `check-setup` before asking them anything.
