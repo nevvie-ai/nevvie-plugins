@@ -1,6 +1,6 @@
 ---
 name: check-setup
-description: Something doesn't work or the owner feels stuck ("het werkt niet", "I can't find it", "Claude can't see my files", "Hipsy won't open", a skill or style seems missing). Tests every piece of their setup, finds the first broken one, and gives the one next step for their computer.
+description: "Something doesn't work or the owner feels stuck (\"het werkt niet\", \"I can't find it\", \"Claude can't see my files\", \"Hipsy won't open\", a skill or style seems missing). Tests every piece of their setup, finds the first broken one, and gives the one next step for their computer."
 ---
 
 Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
@@ -16,8 +16,9 @@ Check in this order and stop at the **first** thing that fails (instructions per
 3. **Plugin up to date?** Its skills are present (you are running one). If they mention something
    new that you don't have: quit the app completely, reopen, new session.
 4. **Languages set?** `Language:` and `Event language:` at the top of `CLAUDE.md`.
-5. **Browser for Hipsy?** Claude in Chrome or the built-in browser available, and signed in to
-   Hipsy (`hipsy.nl/app/events` shows their events, not a login page).
+5. **Channels?** Each channel in `about/brand.md` has its plugin enabled; for channels Claude
+   operates in the browser (Hipsy), a browser is available and signed in (`hipsy.nl/app/events`
+   shows their events, not a login page).
 6. **Connections?** Canva / Gmail / Google Drive tools present when the task needs them.
 7. **Saving works?** Write a small change to a file and read it back.
 

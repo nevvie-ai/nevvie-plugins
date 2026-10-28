@@ -1,0 +1,8 @@
+{
+  "name": "nevvie-hipsy",
+  "displayName": "Hipsy channel for Event Assistant",
+  "description": "Puts your events on Hipsy: the shared Hipsy template, Hipsy's rules check before anything goes online, a read-only scan of your dashboard, and publishing as a hidden concept for you to make live.",
+  "author": { "name": "Nevvie", "email": "nevvieconsulting@gmail.com" },
+  "keywords": ["hipsy", "tickets", "events", "event organiser"],
+  "dependencies": ["nevvie-events"]
+}

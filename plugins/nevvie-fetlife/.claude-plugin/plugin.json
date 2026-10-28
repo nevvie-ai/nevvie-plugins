@@ -1,0 +1,8 @@
+{
+  "name": "nevvie-fetlife",
+  "displayName": "FetLife channel for Event Assistant",
+  "description": "Prepares your events for FetLife: a FetLife-ready event text in your voice, checked against FetLife's rules, ready for you to post yourself.",
+  "author": { "name": "Nevvie", "email": "nevvieconsulting@gmail.com" },
+  "keywords": ["fetlife", "events", "kink", "event organiser"],
+  "dependencies": ["nevvie-events"]
+}

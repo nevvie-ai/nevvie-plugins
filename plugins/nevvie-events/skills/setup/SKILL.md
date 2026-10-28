@@ -1,6 +1,6 @@
 ---
 name: setup
-description: First time with a business, the folder is new or mostly empty, the owner says "set me up" / "help me start", or CLAUDE.md shows an unfinished Setup list. Takes them from zero to a working business folder, one step at a time, adapted to their computer, so they never need outside help.
+description: "First time with a business, the folder is new or mostly empty, the owner says \"set me up\" / \"help me start\", or CLAUDE.md shows an unfinished Setup list. Takes them from zero to a working business folder, one step at a time, adapted to their computer, so they never need outside help."
 ---
 
 Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
@@ -52,19 +52,16 @@ whom; who decides what (dates, prices, tickets); their event types; for each typ
 listing text; ticket rules; their venue if they have one. Write each answer into the right file;
 gaps are **TODO**.
 
-## Stage 4: Hipsy
+## Stage 4: channels
 
-- **Do they sell on Hipsy?** No account yet: creating it is theirs (hipsy.nl, sign up as
-  organiser); guide them, never fill it in.
-- **Browser:** check Claude in Chrome or the built-in browser and whether it's signed in to Hipsy
-  (devices.md); teach what's missing for their system.
-- Has events: run `hipsy-scan` (read only). No events yet: ask the *default* fields of
-  `${CLAUDE_PLUGIN_ROOT}/reference/hipsy-template.md` when the first event needs them and write
-  `offer/hipsy-defaults.md`.
+Ask where they publish events (Hipsy, FetLife, …) and write `Channels:` in `about/brand.md`. For
+each channel: check its plugin is enabled (its skills are present; if not, tell them which plugin
+to add, with the steps from devices.md), then run that channel's setup step (account is theirs;
+sign-in; defaults). See `${CLAUDE_PLUGIN_ROOT}/reference/channels.md`.
 
 ## Stage 5: their voice
 
-Run the `voice` skill's Build step: their own texts first (Hipsy listings, website, two or three
+Run the `voice` skill's Build step: their own texts first (their public event listings, website, two or three
 messages they like), then the profile.
 
 ## Stage 6: connections
@@ -83,7 +80,7 @@ Offer to plan their first event together (`new-event`). Setup is done when it is
 - [ ] Languages
 - [ ] Folder in Google Drive (available offline)
 - [ ] Business basics
-- [ ] Hipsy (account, browser signed in, defaults)
+- [ ] Channels (Hipsy / FetLife: plugin, account, sign-in, defaults)
 - [ ] Voice
 - [ ] Connections (Canva, Gmail)
 - [ ] First event

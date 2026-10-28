@@ -1,6 +1,6 @@
 ---
 name: publish
-description: Putting an approved event on Hipsy, or changing one that is already there. Fills the Hipsy dashboard in the browser as a hidden concept, following the owner's Hipsy template, and lets the owner make it live.
+description: "Putting an approved event on Hipsy, or changing one that is already there. Fills the Hipsy dashboard in the browser as a hidden concept, following the owner's Hipsy template, and lets the owner make it live."
 ---
 
 Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.
@@ -34,7 +34,8 @@ browser tips: `${CLAUDE_PLUGIN_ROOT}/reference/hipsy.md`. Field by field, with e
    including the bring list and anything moved out of the public text), `settings/form-questions`.
 7. Check what's on screen against the event file (and via the API if connected), including that
    the public text is still the checked version.
-8. Write the Hipsy id and link in the event file and in `events/README.md`, status `listed`.
+8. Write the Hipsy id and link in the event file's `## Hipsy` section and in `events/README.md`,
+   status `listed`.
    Send the owner the link. **They** switch concept mode off; then status `live`.
 
 Anything new about Hipsy's pages goes back into the plugin (tell Nevvie); anything new about this

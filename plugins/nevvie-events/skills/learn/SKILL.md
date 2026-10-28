@@ -1,6 +1,6 @@
 ---
 name: learn
-description: After an event, or when the owner corrects a draft or says something should go differently next time. Puts the lesson where it will be used, so it never needs saying twice.
+description: "After an event, or when the owner corrects a draft or says something should go differently next time. Puts the lesson where it will be used, so it never needs saying twice."
 ---
 
 Work by the `guide` skill: one question at a time, nothing goes out without their yes, no tech words.

@@ -22,9 +22,9 @@ Google Sheets can sit next to it in `Claude`. On Windows that is under the Googl
 | `offer/README.md` | The offer at a glance: levels, formats, how events build on each other |
 | `offer/<recipe>.md` | One recipe per event type (format below) |
 | `offer/tickets.md` | Ticket rules: types, prices, age bands, couples/singles, screening |
-| `offer/listing-template.md` | The owner's structure for a Hipsy listing (optional; default below) |
-| `offer/hipsy-defaults.md` | This business's usual Hipsy choices: the *default* fields of the plugin's Hipsy template (location, themes, settings per tab, form questions), their ticket patterns per past event. Made by `hipsy-scan` or asked in `setup`. (Older folders may call it `offer/hipsy-template.md`: read it the same way.) |
-| `events/README.md` | Overview of every event: date, event, status, Hipsy id + link, tickets sold, revenue (totals only), event file |
+| `offer/listing-template.md` | The owner's structure for a public listing (optional; default below) |
+| `offer/<channel>-defaults.md` | This business's usual choices per channel (`hipsy-defaults.md`, `fetlife-defaults.md`), written by that channel plugin. (Older folders may have `offer/hipsy-template.md`: read it as the Hipsy defaults.) |
+| `events/README.md` | Overview of every event: date, event, status, per channel its link, tickets sold, revenue (totals only), event file |
 | `events/YYYY-MM-DD-<recipe>.md` | One file per dated event (format below) |
 | `emails/<name>.md` | Participant email templates: `welcome`, `reminder`, `thank-you` |
 | `place/` | The venue: address, route, facilities, house rules, prices (when they have one) |
@@ -37,8 +37,8 @@ exports of orders. Totals only.
 
 ## Event statuses
 
-`draft` (being prepared) · `approved` (owner said yes) · `listed` (on Hipsy as concept, hidden) ·
-`live` (visible, owner switched concept off) · `done` (after the date).
+`draft` (being prepared) · `approved` (owner said yes) · `listed` (on a channel, not visible yet) ·
+`live` (visible) · `done` (after the date). Each channel section has its own status too.
 
 ## Recipe (`offer/<recipe>.md`)
 
@@ -66,21 +66,21 @@ Only what is specific to that date. Starts with:
 - Recipe: offer/<recipe>.md
 - Status: draft | approved | listed | live | done
 - Date and times:
-- Hipsy: <event id> · <link>
+- Channels: Hipsy <id · link> · FetLife <link>
 - Image: <Canva design link> · <exported 1920 × 1080 file>
 ```
 
-Then open points (**TODO** lines), `## Listing` (the final public text as it goes on Hipsy),
-`## Moved to the welcome email` (lines taken out of the public text for Hipsy's policy, for the
-owner to review), `## Tickets` (as set on Hipsy), `## Promotion` (the posts as approved),
+Then open points (**TODO** lines), one section per channel (`## Hipsy`, `## FetLife`: the public
+text as it goes on that platform, link, status, date of the rules check), `## Moved to the welcome
+email` (lines taken out of a public text for a platform's rules, for the owner to review),
+`## Tickets` (as set on the ticket channel), `## Promotion` (the posts as approved),
 `## Sales` (totals only), `## Learned`.
 
-## Hipsy defaults (`offer/hipsy-defaults.md`)
+## Channel defaults (`offer/<channel>-defaults.md`)
 
-Hipsy's fields and pages are the same for every organiser: they live in the plugin
-(`hipsy-template.md`). This file holds only the business's values for the fields marked
-*default* there, grouped like the template (Bewerken, Tickets, Instellingen), plus their ticket
-patterns per past event and any **TODO** questions.
+Each platform's fields and rules live in its channel plugin (`channels.md`). This file holds only
+the business's values for that platform, plus their patterns from past events and any **TODO**
+questions.
 
 ## Default listing structure (when there is no `offer/listing-template.md`)
 

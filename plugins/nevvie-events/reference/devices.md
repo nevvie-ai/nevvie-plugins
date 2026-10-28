@@ -60,7 +60,8 @@ session.
 ## The plugin itself
 
 - Installed through the app: **Customize → Plugins → Add marketplace** `nevvie-ai/nevvie-plugins`
-  → install **Event Assistant for Hipsy organisers**.
+  → install **Event Assistant for Hipsy organisers** plus their channels (**Hipsy channel**,
+  **FetLife channel**).
 - Updates arrive on their own when a session starts. If something new doesn't show up: **quit the
   Claude app completely** (Windows: also from the tray; Mac: Cmd+Q), open it again, start a new
   session.

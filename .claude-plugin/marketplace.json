@@ -1,12 +1,25 @@
 {
   "name": "nevvie-plugins",
   "description": "Nevvie's Claude plugins for small businesses that run on talking, not tech.",
-  "owner": { "name": "Nevvie (Meltem Oktay)", "email": "nevvieconsulting@gmail.com" },
+  "owner": {
+    "name": "Nevvie (Meltem Oktay)",
+    "email": "nevvieconsulting@gmail.com"
+  },
   "plugins": [
     {
       "name": "nevvie-events",
       "source": "./plugins/nevvie-events",
-      "description": "Plan, list and sell your events on Hipsy by talking to Claude."
+      "description": "The base: your business folder, voice, setup, planning events and participant emails. Install it with at least one channel."
+    },
+    {
+      "name": "nevvie-hipsy",
+      "source": "./plugins/nevvie-hipsy",
+      "description": "Hipsy channel: Hipsy's rules check and publishing your events on Hipsy as a hidden concept. Needs nevvie-events."
+    },
+    {
+      "name": "nevvie-fetlife",
+      "source": "./plugins/nevvie-fetlife",
+      "description": "FetLife channel: a FetLife-ready event text checked against FetLife's rules, for you to post. Needs nevvie-events."
     }
   ]
 }

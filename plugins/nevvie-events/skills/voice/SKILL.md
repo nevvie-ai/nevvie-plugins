@@ -1,6 +1,6 @@
 ---
 name: voice
-description: Write anything the owner's participants, guests or followers will read (Hipsy listing, welcome text, email, social post, newsletter, website text) in the owner's own voice, and learn from every reaction they give to a draft. Load before writing any of those, and whenever the owner approves, cuts or rewrites a draft. Also builds the voice profile during setup.
+description: "Write anything the owner's participants, guests or followers will read (Hipsy listing, welcome text, email, social post, newsletter, website text) in the owner's own voice, and learn from every reaction they give to a draft. Load before writing any of those, and whenever the owner approves, cuts or rewrites a draft. Also builds the voice profile during setup."
 ---
 
 Work by the `guide` skill. This skill is about how **they** write; `guide` is about how you talk
