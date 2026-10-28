@@ -6,7 +6,7 @@ Nevvie's private Claude plugin marketplace for small businesses.
 
 | Plugin | For |
 |---|---|
-| `nevvie-events` (Event Assistant for Hipsy organisers) | The base for every event business: folder, voice, setup, planning, emails |
+| `nevvie-events` (Event Assistant) | The base for every event business: folder, voice, setup, planning, emails |
 | `nevvie-hipsy` (Hipsy channel) | Publishing on Hipsy (depends on the base) |
 | `nevvie-fetlife` (FetLife channel) | Preparing events for FetLife (depends on the base) |
 

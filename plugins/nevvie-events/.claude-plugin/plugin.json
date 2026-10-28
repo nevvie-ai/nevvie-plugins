@@ -1,7 +1,7 @@
 {
   "name": "nevvie-events",
-  "displayName": "Event Assistant for Hipsy organisers",
-  "description": "Plan, list and sell your events on Hipsy by talking to Claude: listings, tickets, posters, posts and participant emails, in your own voice.",
+  "displayName": "Event Assistant",
+  "description": "The base for event organisers: your business folder, your writing voice, setup, planning events and participant emails. Add a channel plugin (Hipsy, FetLife) to publish.",
   "author": {
     "name": "Nevvie",
     "email": "nevvieconsulting@gmail.com"

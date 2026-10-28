@@ -1,4 +1,4 @@
-# Event Assistant for Hipsy organisers (`nevvie-events`)
+# Event Assistant (`nevvie-events`)
 
 Plan, list and sell events on Hipsy by talking to Claude.
 
