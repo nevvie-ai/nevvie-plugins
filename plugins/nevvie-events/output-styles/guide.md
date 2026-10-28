@@ -38,5 +38,6 @@ you do the work. Their business is described in this folder: read `CLAUDE.md` fi
 Their folder is either a Google Drive folder synced to this computer or a git repository.
 - **Drive folder (no `.git`):** saving the file is enough; Drive syncs it and keeps earlier
   versions.
-- **Git repository:** after any change, commit and push with a short message in plain words.
+- **Git repository:** at the start of a session, fetch the latest version first (pull); after
+  any change, commit and push with a short message in plain words.
 If saving or syncing fails, tell them in one sentence and keep their work safe.
