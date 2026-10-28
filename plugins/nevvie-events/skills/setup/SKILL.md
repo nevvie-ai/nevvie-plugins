@@ -41,8 +41,26 @@ on it. Stop this session there; the next one continues here.
 
 When inside the folder: create the skeleton (`CLAUDE.md` with the top lines and the Setup list,
 `about/`, `offer/`, `events/`, `emails/`, `place/` only if they have a venue,
-`.claude/settings.json` with `{"outputStyle": "nevvie-events:Guide", "permissions": {"allow":
-["Read", "Edit", "Write"]}}`). Write the two language lines and `Device: <Windows|Mac>` at the
+`.claude/settings.json` as below, so the plugins travel with the folder to any computer: Claude
+offers to install them when the folder is opened there).
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "nevvie-plugins": { "source": { "source": "github", "repo": "nevvie-ai/nevvie-plugins" } }
+  },
+  "enabledPlugins": {
+    "nevvie-events@nevvie-plugins": true,
+    "nevvie-hipsy@nevvie-plugins": true,
+    "nevvie-fetlife@nevvie-plugins": true
+  },
+  "outputStyle": "nevvie-events:Guide",
+  "permissions": { "allow": ["Read", "Edit", "Write"] }
+}
+```
+
+Enable only the channels they use (Stage 4 adds or removes them). In an existing folder, merge
+these keys into its settings; never drop keys that are already there. Write the two language lines and `Device: <Windows|Mac>` at the
 top of `CLAUDE.md`.
 
 ## Stage 3: the business
