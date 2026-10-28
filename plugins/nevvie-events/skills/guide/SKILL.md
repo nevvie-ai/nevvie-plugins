@@ -1,6 +1,6 @@
 ---
 name: guide
-description: How to work with the business owner. Use in every conversation with them, before answering anything: how to talk (one question at a time, no tech words, their language), what never goes out without their yes, and how to protect their time and their participants' data.
+description: How to work with the owner of a business that runs on this plugin. Use in every conversation inside a Nevvie business folder (a CLAUDE.md with a Language line, or the Nevvie layout of about/, offer/, events/), before answering anything there - how to talk (one question at a time, no tech words, their language), what never goes out without their yes, and how to protect their time and their participants' data. Not for conversations outside such a folder.
 ---
 
 # Working with the owner
