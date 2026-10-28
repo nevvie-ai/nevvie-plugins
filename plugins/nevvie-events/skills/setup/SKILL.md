@@ -17,7 +17,12 @@ without the owner ever seeing it.
    `offer/`, `events/`, `emails/`, `place/` (only if they have a venue), and
    `.claude/settings.json` with `{"outputStyle": "nevvie-events:Guide", "permissions": {"allow":
    ["Read", "Edit", "Write"]}}`. Write everything in their language. Tell them in one sentence that their folder is ready.
-2. Read what exists: the folder, their Hipsy listings (if reachable), documents they point to.
+2. Read what exists: the folder and documents they point to. If they already sell on Hipsy, run
+   `hipsy-scan` (read only) to learn their events and usual choices. If they don't, ask the
+   *default* fields of `${CLAUDE_PLUGIN_ROOT}/reference/hipsy-template.md` one at a time when the
+   first event needs them, and write `offer/hipsy-defaults.md`.
+   Offer once to connect Canva (the "Canva" connector on their Claude account: search designs,
+   autofill, export), so posters for new dates are made for them.
 3. Interview, one question per message, in this order; skip whatever you can already answer:
    what they run and for whom; who decides what; their event types; for each type, the latest
    listing text; ticket rules; their place if they have one; how they write (ask for two messages

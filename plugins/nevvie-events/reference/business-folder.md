@@ -21,6 +21,8 @@ Google Sheets can sit next to it in `Claude`. On Windows that is under the Googl
 | `offer/<recipe>.md` | One recipe per event type (format below) |
 | `offer/tickets.md` | Ticket rules: types, prices, age bands, couples/singles, screening |
 | `offer/listing-template.md` | The owner's structure for a Hipsy listing (optional; default below) |
+| `offer/hipsy-defaults.md` | This business's usual Hipsy choices: the *default* fields of the plugin's Hipsy template (location, themes, settings per tab, form questions), their ticket patterns per past event. Made by `hipsy-scan` or asked in `setup`. (Older folders may call it `offer/hipsy-template.md`: read it the same way.) |
+| `events/README.md` | Overview of every event: date, event, status, Hipsy id + link, tickets sold, revenue (totals only), event file |
 | `events/YYYY-MM-DD-<recipe>.md` | One file per dated event (format below) |
 | `emails/<name>.md` | Participant email templates: `welcome`, `reminder`, `thank-you` |
 | `place/` | The venue: address, route, facilities, house rules, prices (when they have one) |
@@ -28,7 +30,13 @@ Google Sheets can sit next to it in `Claude`. On Windows that is under the Googl
 Files are written in the owner's working language; section headings may be in that language too
 (match them by meaning). Folder and file names stay as listed here.
 
-**Never in the folder:** participants' personal data, passwords, API keys, exports of orders.
+**Never in the folder:** participants' names, emails or other personal data, passwords, API keys,
+exports of orders. Totals only.
+
+## Event statuses
+
+`draft` (being prepared) · `approved` (owner said yes) · `listed` (on Hipsy as concept, hidden) ·
+`live` (visible, owner switched concept off) · `done` (after the date).
 
 ## Recipe (`offer/<recipe>.md`)
 
@@ -38,6 +46,7 @@ Everything that stays the same each time this event runs. Sections, in this orde
 - `## Format`: level, programme with times, `Language:` of the event (what participants read),
   capacity, facilitators
 - `## Tickets`: table `Ticket | Price | Quantity | Notes`
+- `## Image`: the Canva design to copy for a new date (link or name)
 - `## Listing text`: the owner's own text, which is adapted per date, never rewritten without them
 - `## What to bring`
 - `## Emails`: which templates go out, plus anything specific to this event
@@ -53,14 +62,23 @@ Only what is specific to that date. Starts with:
 ```
 # <Event title> · <date>
 - Recipe: offer/<recipe>.md
-- Status: draft | approved | listed | done
+- Status: draft | approved | listed | live | done
 - Date and times:
 - Hipsy: <event id> · <link>
-- Image: <where the poster is>
+- Image: <Canva design link> · <exported 1920 × 1080 file>
 ```
 
-Then `## Listing` (the final text as it goes on Hipsy), `## Tickets` (if different from the
-recipe), `## Promotion` (the posts as approved), `## Sales` (totals only), `## Learned`.
+Then open points (**TODO** lines), `## Listing` (the final public text as it goes on Hipsy),
+`## Moved to the welcome email` (lines taken out of the public text for Hipsy's policy, for the
+owner to review), `## Tickets` (as set on Hipsy), `## Promotion` (the posts as approved),
+`## Sales` (totals only), `## Learned`.
+
+## Hipsy defaults (`offer/hipsy-defaults.md`)
+
+Hipsy's fields and pages are the same for every organiser: they live in the plugin
+(`hipsy-template.md`). This file holds only the business's values for the fields marked
+*default* there, grouped like the template (Bewerken, Tickets, Instellingen), plus their ticket
+patterns per past event and any **TODO** questions.
 
 ## Default listing structure (when there is no `offer/listing-template.md`)
 
