@@ -13,5 +13,5 @@ Work by the `guide` skill: one question at a time, nothing goes out without thei
 2. **Reminder, thank-you, extra message:** to everyone with a ticket, through Hipsy's
    *E-mail Deelnemers* (one message to all), or as drafts in their Gmail if connected and
    personal emails are needed. Marketing only to people who opted in to the newsletter.
-3. Show one filled example and the number of people; act only on their yes.
+3. Write with the `voice` skill. Show one filled example and the number of people; act only on their yes.
 4. Never paste lists of names or emails into the chat or the folder.

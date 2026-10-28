@@ -12,6 +12,8 @@ Read `${CLAUDE_PLUGIN_ROOT}/reference/business-folder.md`, `${CLAUDE_PLUGIN_ROOT
 everyone) and the owner's `offer/hipsy-defaults.md` (their values; if it's missing and they already
 use Hipsy, run `hipsy-scan` first).
 
+Write every public and participant text with the `voice` skill.
+
 **Pre-fill everything** from the recipe, their Hipsy defaults and the last event of the same type.
 Ask only what's left, one question per message, in this order:
 

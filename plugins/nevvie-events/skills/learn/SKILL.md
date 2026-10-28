@@ -10,5 +10,6 @@ Work by the `guide` skill: one question at a time, nothing goes out without thei
 1. After an event: ask one question, what to keep and what to change. Add sales totals if known.
 2. Put each lesson where it will be used: the recipe (format, tickets, promotion, `## Learned`),
    `about/voice.md` (how they write), `offer/tickets.md`, or `place/`. One dated line each.
-3. When they edit a draft: note what changed and why in `about/voice.md` or the recipe.
+3. When they edit, cut or approve a draft: the `voice` skill's Learn step (`about/voice-edits.md`,
+   samples, profile); content changes go in the recipe.
 4. Event file status `done`. Save.

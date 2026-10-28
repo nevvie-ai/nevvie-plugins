@@ -21,6 +21,7 @@ without the owner ever seeing it.
    `hipsy-scan` (read only) to learn their events and usual choices. If they don't, ask the
    *default* fields of `${CLAUDE_PLUGIN_ROOT}/reference/hipsy-template.md` one at a time when the
    first event needs them, and write `offer/hipsy-defaults.md`.
+   Build their voice with the `voice` skill (samples first, then the profile).
    Offer once to connect Canva (the "Canva" connector on their Claude account: search designs,
    autofill, export), so posters for new dates are made for them.
 3. Interview, one question per message, in this order; skip whatever you can already answer:

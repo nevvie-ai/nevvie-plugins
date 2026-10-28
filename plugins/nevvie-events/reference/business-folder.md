@@ -16,7 +16,9 @@ Google Sheets can sit next to it in `Claude`. On Windows that is under the Googl
 | `CLAUDE.md` | First line `Language: Nederlands` or `Language: English` (the owner's working language). Then who the business is, who decides what, and a map of this folder |
 | `about/owner.md` | The owner, partners, who decides dates, prices, tickets |
 | `about/brand.md` | Brand(s), audience, tone, values, channels (Hipsy, newsletter, socials) |
-| `about/voice.md` | How the owner writes; grows from every correction |
+| `about/voice.md` | How the owner writes: the voice profile, every line backed by a quote (`voice` skill) |
+| `about/voice-samples/` | Their own texts verbatim, one per file, first line `format: … · status: approved/rejected · source: …` |
+| `about/voice-edits.md` | What they changed in drafts: before, after, why, date |
 | `offer/README.md` | The offer at a glance: levels, formats, how events build on each other |
 | `offer/<recipe>.md` | One recipe per event type (format below) |
 | `offer/tickets.md` | Ticket rules: types, prices, age bands, couples/singles, screening |
