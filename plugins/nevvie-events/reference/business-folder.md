@@ -4,11 +4,12 @@ Every skill in this plugin reads and writes the owner's business folder in this 
 folder is plain text files, either in their Google Drive (synced to the computer with Google
 Drive for desktop, kept available offline; the default) or in a git repository.
 
+This folder is the contract between the plugin (same for everyone) and the business (theirs
+alone). Paths are relative to the folder root.
+
 Default place: Google Drive → My Drive → `Claude` → `<business name>`. Images, posters and
 Google Sheets can sit next to it in `Claude`. On Windows that is under the Google Drive drive
-(often `G:\My Drive\Claude`); on a Mac under `~/Library/CloudStorage/GoogleDrive-<account>/My Drive/Claude`. It is the
-contract between the plugin (same for everyone) and the business (theirs alone). Paths are
-relative to the folder root.
+(often `G:\My Drive\Claude`); on a Mac under `~/Library/CloudStorage/GoogleDrive-<account>/My Drive/Claude`.
 
 | Path | Holds |
 |---|---|
